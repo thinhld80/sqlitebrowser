@@ -1,0 +1,9 @@
+-IC:/git_repos/sqlitebrowser/libs/qscintilla/Qt4Qt5
+-IC:/git_repos/sqlitebrowser/libs/qscintilla/Qt4Qt5
+-DSCINTILLA_QT
+-DSCI_LEXER
+-DWIN32
+--compiler-flavor=msvc
+-o
+C:/git_repos/sqlitebrowser/libs/qscintilla/Qt4Qt5/Qsci/moc_qscilexerjson.cpp
+C:/git_repos/sqlitebrowser/libs/qscintilla/Qt4Qt5/Qsci/qscilexerjson.h

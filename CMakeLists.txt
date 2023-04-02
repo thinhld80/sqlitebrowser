@@ -58,8 +58,8 @@ endif()
 if(MSVC)
     if(CMAKE_CL_64)
         # Paths for 64-bit windows builds
-        set(OPENSSL_PATH "C:/dev/OpenSSL-Win64" CACHE PATH "OpenSSL Path")
-        set(QT5_PATH "C:/dev/Qt/5.12.12/msvc2017_64" CACHE PATH "Qt5 Path")
+        set(OPENSSL_PATH "C:/Program Files/OpenSSL-Win64" CACHE PATH "OpenSSL Path")
+        set(QT5_PATH "D:/Qt/5.15.2/msvc2019_64" CACHE PATH "Qt5 Path")
 
         # Choose between SQLCipher or SQLite, depending whether
         # -Dsqlcipher=on is passed on the command line
@@ -100,6 +100,11 @@ endif()
 if(APPLE AND EXISTS /opt/homebrew/opt/sqlitefts5)
     list(PREPEND CMAKE_PREFIX_PATH "/opt/homebrew/opt/sqlitefts5")
 endif()
+
+set(Qt5_DIR
+  # Change this value to the Qt SDK path of your build environment ######Modify your own path here
+  "D:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5"
+)
 
 find_package(Qt5 REQUIRED COMPONENTS Concurrent Gui LinguistTools Network PrintSupport Test Widgets Xml)
 
